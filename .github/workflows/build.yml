@@ -23,7 +23,7 @@ jobs:
       - name: Build JAR
         run: |
           mkdir -p build
-          jar cf build/CapybaraSMP.jar -C src .
+          jar cf build/CapybaraSMP.jar .
 
       - name: Upload CapybaraSMP.jar
         uses: actions/upload-artifact@v4
